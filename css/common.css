@@ -31,7 +31,6 @@ body {
 body > header {
   font-family: var(--banner);
   font-size: 3rem;
-  font-variant-ligatures: discretionary-ligatures;
   line-height: 1;
   text-align: center;
 }
