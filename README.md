@@ -10,9 +10,9 @@ The site is generated using [Eleventy](https://www.11ty.io/).
 
 From the command line: `npx eleventy` -- which will generate the site into a `_site` directory.
 
-## About the fonts
+## About the webfonts
 
-These will only work on drasty.com.
+The webfonts used in this project will only work on drasty.com. If you like them, you should check out [Hoefler & Co](https://www.typography.com/webfonts/).
 
 ## License
 
