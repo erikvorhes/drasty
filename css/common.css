@@ -4,31 +4,34 @@
 
 :root {
   background-color: hsl(34, 12%, 98%);
-  height: 100%;
-}
-
-body {
-  color: hsl(32, 73%, 7%);
-  font-family: "Mercury SSm A", "Mercury SSm B", Georgia, serif;
-  font-kerning: normal;
   font-size: 125%;
-  font-variant-ligatures: common-ligatures;
-  line-height: 1.5;
-  margin: 0;
-  text-size-adjust: 100%;
+  height: 100%;
+
+  --banner: "English Textura A", "English Textura B", fantasy;
+  --text: "Mercury SSm A", "Mercury SSm B", Georgia, serif;
 }
 
 @media screen and (max-width: 720px) {
-  body {
+  :root {
     font-size: 112.5%;
   }
 }
 
+body {
+  color: hsl(32, 73%, 7%);
+  font-family: var(--text);
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures;
+  line-height: 1.5;
+  margin: 0;
+  padding: 1.5rem;
+  text-size-adjust: 100%;
+}
+
 body > header {
-  font-family: "English Textura A", "English Textura B", fantasy;
+  font-family: var(--banner);
   font-size: 3rem;
   line-height: 1;
-  padding-top: 1.5rem;
   text-align: center;
 }
 
