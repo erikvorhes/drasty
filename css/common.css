@@ -55,3 +55,8 @@ main > footer {
   font-style: italic;
   text-align: right;
 }
+
+body > footer {
+  font-size: .75rem;
+  line-height: 2;
+}
