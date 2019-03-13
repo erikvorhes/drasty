@@ -56,7 +56,7 @@ main > footer {
   text-align: right;
 }
 
-body > footer {
+body > footer > p {
   font-size: .75rem;
   line-height: 2;
 }
