@@ -11,6 +11,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy('css');
+  eleventyConfig.addPassthroughCopy('_redirects');
 
   let markdownIt = require('markdown-it');
   let markdownOpts = {

@@ -4,30 +4,31 @@
 
 :root {
   background-color: hsl(34, 12%, 98%);
+  height: 100%;
+}
+
+body {
   color: hsl(32, 73%, 7%);
   font-family: "Mercury SSm A", "Mercury SSm B", Georgia, serif;
   font-kerning: normal;
   font-size: 125%;
   font-variant-ligatures: common-ligatures;
-  height: 100%;
   line-height: 1.5;
+  margin: 0;
   text-size-adjust: 100%;
 }
 
 @media screen and (max-width: 720px) {
-  :root {
+  body {
     font-size: 112.5%;
   }
-}
-
-body {
-  margin: 0;
 }
 
 body > header {
   font-family: "English Textura A", "English Textura B", fantasy;
   font-size: 3rem;
   line-height: 1;
+  padding-top: 1.5rem;
   text-align: center;
 }
 
