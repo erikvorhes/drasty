@@ -8,7 +8,7 @@ The site is generated using [Eleventy](https://www.11ty.io/).
 
 ## Local usage
 
-From the command line: `npx eleventy` -- which will generate the site into a `_site` directory.
+From the command line: `npx eleventy` — which will generate the site into a `_site` directory.
 
 ## About the webfonts
 
