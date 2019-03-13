@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1">
+  <meta name="description" content="{{ metadata.description }}">
+  <title>drasty.com</title>
+  <link rel="stylesheet" href="https://cloud.typography.com/6419016/6821212/css/fonts.css">
+  <link rel="stylesheet" href="{{ '/css/common.css' | url }}">
+</head>
+<body>
+  <header lang="enm">{{ metadata.title }}</header>
+  <main>
+    <h1>{{ title }}</h1>
+    {{ content | safe }}
+    <footer>&mdash; <time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time></footer>
+  </main>
+  <footer>Writing by Erik Vorhes, licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> and hosted on <a href="https://www.netlify.com/">Netlify</a>.</footer>
+</body>
+</html>

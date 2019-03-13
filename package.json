@@ -1,0 +1,22 @@
+{
+  "name": "drasty.com",
+  "version": "1.0.0",
+  "description": "A celebration of shitposting, presented by @erikvorhes.",
+  "main": "_site/index.html",
+  "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "build-production": "ELEVENTY_PRODUCTION=true eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erikvorhes/drasty.git"
+  },
+  "author": "Erik Vorhes",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.7.1",
+    "luxon": "^1.0.0",
+    "markdown-it": "^8.4.1"
+  }
+}

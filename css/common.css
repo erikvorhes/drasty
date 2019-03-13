@@ -1,0 +1,53 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  background-color: hsl(34, 12%, 98%);
+  color: hsl(32, 73%, 7%);
+  font-family: "Mercury SSm A", "Mercury SSm B", Georgia, serif;
+  font-kerning: normal;
+  font-size: 125%;
+  font-variant-ligatures: common-ligatures;
+  height: 100%;
+  line-height: 1.5;
+  text-size-adjust: 100%;
+}
+
+@media screen and (max-width: 720px) {
+  :root {
+    font-size: 112.5%;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+body > header {
+  font-family: "English Textura A", "English Textura B", fantasy;
+  font-size: 3rem;
+  line-height: 1;
+  text-align: center;
+}
+
+main,
+body > footer {
+  margin: 0 auto;
+  max-width: 70ch;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1;
+}
+
+h1, p, header, footer {
+  margin: 0 0 1.5rem;
+}
+
+main > footer {
+  font-style: italic;
+  text-align: right;
+}
