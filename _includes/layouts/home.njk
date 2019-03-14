@@ -13,7 +13,9 @@
   <main>
     <h1>{{ title }}</h1>
     {{ content | safe }}
+  {% if date %}
     <footer>— <time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time></footer>
+  {% endif %}
   </main>
   <footer>
     <p>Copyright © 2019 Erik Vorhes, licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a> and hosted on <a href="https://www.netlify.com/">Netlify</a>.</p>

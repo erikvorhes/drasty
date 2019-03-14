@@ -4,7 +4,9 @@ This is the source code for <a href="https://drasty.com/"><i lang="enm">Drasty S
 
 The plan is to kick things off for real some time in April.
 
-The site is generated using [Eleventy](https://www.11ty.io/).
+The site is generated using [Eleventy](https://www.11ty.io/) and deployed on [Netlify](https://www.netlify.com/).
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/181a5a3a-61f9-4881-a36d-02446a43a344/deploy-status)](https://app.netlify.com/sites/drasty/deploys)
 
 ## Local usage
 
@@ -17,6 +19,13 @@ $ npx eleventy
 ```
 
 Static content will be generated into a `_site` directory to deploy.
+
+## Themes, because why not?
+
+For kicks I’m going to add a theming selector, based on various manuscripts containing the <cite>Canterbury Tales</cite>.
+
+1. [Ellesmere](https://hdl.huntington.org/digital/collection/p15150coll7/id/2838)
+2. <a href="https://www.library.wales/discover/digital-gallery/manuscripts/the-middle-ages/the-hengwrt-chaucer/" lang="cy">Hengwrt</a>
 
 ## About the webfonts
 
