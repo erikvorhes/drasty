@@ -17,6 +17,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.7.1",
     "luxon": "^1.0.0",
-    "markdown-it": "^8.4.1"
+    "markdown-it": "^8.4.1",
+    "markdown-it-attrs": "^2.3.2"
   }
 }
