@@ -11,6 +11,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy('css');
+  eleventyConfig.addPassthroughCopy('img');
   eleventyConfig.addPassthroughCopy('_redirects');
 
   const mdConfig = require('markdown-it')({
