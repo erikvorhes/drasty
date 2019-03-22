@@ -15,7 +15,7 @@ From the command line:
 ```
 $ cd drasty
 $ npm install
-$ npx eleventy
+$ npm run build
 ```
 
 Static content will be generated into a `_site` directory to deploy.
