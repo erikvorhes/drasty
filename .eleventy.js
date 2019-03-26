@@ -1,3 +1,8 @@
+const md = require('markdown-it');
+const mdAttrs = require('markdown-it-attrs');
+const rss = require('@11ty/eleventy-plugin-rss');
+
+
 const { DateTime } = require('luxon');
 
 module.exports = function(eleventyConfig) {
@@ -14,17 +19,20 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('img');
   eleventyConfig.addPassthroughCopy('_redirects');
 
-  const mdConfig = require('markdown-it')({
+  const mdConfig = md({
     html: true,
     typographer: true
   });
-  mdConfig.use(require('markdown-it-attrs'));
+  mdConfig.use(mdAttrs);
   eleventyConfig.setLibrary('md', mdConfig);
+
+  eleventyConfig.addPlugin(rss);
 
   return {
     templateFormats: ['njk', 'md'],
     markdownTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',
-    dataTemplateEngine: false
+    dataTemplateEngine: false,
+    passthroughFileCopy: true
   };
 };

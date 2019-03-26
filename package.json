@@ -20,5 +20,8 @@
     "luxon": "^1.0.0",
     "markdown-it": "^8.4.1",
     "markdown-it-attrs": "^2.3.2"
+  },
+  "dependencies": {
+    "@11ty/eleventy-plugin-rss": "^1.0.6"
   }
 }
