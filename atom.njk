@@ -1,11 +1,11 @@
 ---
-permalink: feed.xml
+permalink: atom.xml
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ metadata.title }}</title>
   <subtitle>{{ metadata.description }}</subtitle>
-  <link href="{{ metadata.url }}feed.xml" rel="self" />
+  <link href="{{ metadata.url }}atom.xml" rel="self" />
   <link href="{{ metadata.url }}" />
   <updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
   <id>{{ metadata.url }}</id>
@@ -16,11 +16,12 @@ permalink: feed.xml
   {%- for post in collections.posts %}
   {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
   <entry>
-    <title>{{ post.data.title }}</title>
+    <title><![CDATA[{{ post.data.title }}]]></title>
     <link href="{{ absolutePostUrl }}" />
     <updated>{{ post.date | rssDate }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+    <summary>{{ post.data.summary }}</summary>
+    <content><![CDATA[{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}]]></content>
   </entry>
   {%- endfor %}
 </feed>

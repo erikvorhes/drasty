@@ -1,0 +1,23 @@
+---
+permalink: rss.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>{{ metadata.title }}</title>
+    <description>{{ metadata.description }}</description>
+    <managingEditor>Erik Vorhes</managingEditor>
+    <pubDate>{{ collections.posts | rssLastUpdatedDate }}</pubDate>
+    <link>{{ metadata.url }}</link>
+    {%- for post in collections.posts %}
+    {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+    <item>
+      <title><![CDATA[{{ post.data.title }}]]></title>
+      <link>{{ absolutePostUrl }}</link>
+      <guid isPermaLink="true">{{ absolutePostUrl }}</guid>
+      <description>{{ post.data.summary }}</description>
+      <pubDate>{{ poste.date | rssDate }}</pubDate>
+    </item>
+    {%- endfor %}
+  </channel>
+</rss>
