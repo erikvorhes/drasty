@@ -9,15 +9,21 @@ permalink: rss.xml
     <managingEditor>Erik Vorhes</managingEditor>
     <pubDate>{{ collections.posts | rssLastUpdatedDate }}</pubDate>
     <link>{{ metadata.url }}</link>
-    {%- for post in collections.posts %}
+    {%- for post in collections.posts -%}
     {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
     <item>
       <title><![CDATA[{{ post.data.title }}]]></title>
       <link>{{ absolutePostUrl }}</link>
       <guid isPermaLink="true">{{ absolutePostUrl }}</guid>
-      <description>{{ post.data.summary }}</description>
+      <description>
+        {%- if post.data.summary -%}
+        {{ post.data.summary }}
+        {%- else -%}
+        <![CDATA[{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}]]>
+        {%- endif -%}
+      </description>
       <pubDate>{{ poste.date | rssDate }}</pubDate>
     </item>
-    {%- endfor %}
+    {%- endfor -%}
   </channel>
 </rss>
