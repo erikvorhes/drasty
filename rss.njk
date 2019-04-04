@@ -1,6 +1,7 @@
 ---
 permalink: rss.xml
 ---
+{%- if collections.posts -%}
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
   <channel>
@@ -27,3 +28,4 @@ permalink: rss.xml
     {%- endfor -%}
   </channel>
 </rss>
+{%- endif -%}
