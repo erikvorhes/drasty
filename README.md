@@ -2,7 +2,7 @@
 
 This is the source code for <a href="https://drasty.com/"><i lang="enm">Drasty Speche</i></a>, a celebration of Geoffrey Chaucer, a master of shitposting. Feel free to file issues or make suggestions in this repository!
 
-The plan is to kick things off for real some time in April.
+The plan is to kick things off for real some time in April 2020.
 
 The site is generated using [Eleventy](https://www.11ty.io/) and deployed on [Netlify](https://www.netlify.com/).
 
@@ -26,10 +26,6 @@ For kicks I’m going to add a theming selector, based on various manuscripts co
 
 1. [Ellesmere](https://hdl.huntington.org/digital/collection/p15150coll7/id/2838)
 2. <a href="https://www.library.wales/discover/digital-gallery/manuscripts/the-middle-ages/the-hengwrt-chaucer/" lang="cy">Hengwrt</a>
-
-## About the webfonts
-
-The webfonts used in this project will only work on drasty.com. If you like them, you should check out [Hoefler & Co](https://www.typography.com/webfonts/).
 
 ## License
 

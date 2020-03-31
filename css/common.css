@@ -1,25 +1,22 @@
-*, *::before, *::after {
+*, ::before, ::after {
   box-sizing: border-box;
 }
 
 :root {
   background-color: hsl(34, 12%, 98%);
-  font-size: 125%;
+  font-family: Georgia, serif;
+  font-size: 112.5%;
   height: 100%;
-
-  --banner: "Inkwell Blackletter A", "Inkwell Blackletter B", cursive;
-  --text: "Mercury SSm A", "Mercury SSm B", Georgia, serif;
 }
 
 @media screen and (max-width: 720px) {
   :root {
-    font-size: 112.5%;
+    font-size: 100%;
   }
 }
 
 body {
   color: hsl(32, 73%, 7%);
-  font-family: var(--text);
   font-kerning: normal;
   font-variant-ligatures: common-ligatures;
   line-height: 1.5;
@@ -29,9 +26,6 @@ body {
 }
 
 body > header {
-  font-family: var(--banner);
-  font-size: 3rem;
-  line-height: 1;
   text-align: center;
 }
 
