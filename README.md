@@ -29,4 +29,4 @@ For kicks I’m going to add a theming selector, based on various manuscripts co
 
 ## License
 
-All project content is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). The underlying source code is covered lis licensed under the [MIT License](LICENSE). If you do anything with any of this stuff, please let me know about it!
+All project content is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). The underlying source code is covered under the [MIT License](LICENSE). If you do anything with any of this stuff, please let me know about it!
