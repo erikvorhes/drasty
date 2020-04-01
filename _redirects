@@ -1,2 +1,5 @@
 # Redirect default Netlify subdomain to primary domain
+http://drasty.netlify.app/* http://drasty.com/:splat 301!
 http://drasty.netlify.com/* http://drasty.com/:splat 301!
+https://drasty.netlify.app/* https://drasty.com/:splat 301!
+https://drasty.netlify.com/* https://drasty.com/:splat 301!
