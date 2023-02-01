@@ -2,7 +2,7 @@
 
 This is the source code for <a href="https://drasty.com/"><i lang="enm">Drasty Speche</i></a>, a celebration of Geoffrey Chaucer, a master of shitposting. Feel free to file issues or make suggestions in this repository!
 
-The plan is to kick things off for real some time in April 2020.
+The plan is to kick things off for real some time in April 20XX.
 
 The site is generated using [Eleventy](https://www.11ty.io/) and deployed on [Netlify](https://www.netlify.com/).
 
